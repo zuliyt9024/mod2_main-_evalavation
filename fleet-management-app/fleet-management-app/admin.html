@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fleet-Management-APP</title>
+  </head>
+  <style>
+
+    *body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aliceblue;
+        margin: 0;
+        padding: 15px;
+    }
+    #box{
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        text-align: center;
+        border-radius:20px solid blue ;
+
+        
+
+    }
+    #input{
+        color: aqua;
+        text-decoration: dashed;
+        margin: 40px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imgurl{
+        width: 200px;
+        height:200px
+    }
+    
+  </style>
+  <body>
+    <h3 id="admin">Admin page</h3>
+    <form action="navbar" id="form">
+      <div id="box">
+        <div id="box">Sidebar</div>
+        <div id="box">navbar</div>
+        <div id="box">main</div>
+        <div id="box">content</div>
+        <div id="box">Area</div>
+      </div>
+
+      <input
+        type="text"
+        type="register"
+        id="input"
+        placeholder="ragisternumber..."
+      />
+      <select name="Sidebar" id="Catoery">
+        <option value="All">All</option>
+        <option value="auto">Auto</option>
+        <option value="car">Car</option>
+        <option value="bus">Bus</option>
+        <option value="track">Track</option>
+        <ul id="addlist"><li></li></ul>
+        <button
+          onclick="changeColor"
+          id="add fleet"
+          button.style.color="pink"
+          width="auto"
+          hight="auto"
+        >
+          AddFleet
+        </button>
+        <img src="https://coding-platform.s3.amazonaws.com/dev/lms/tickets/5e80fcb6-3f8e-480c-945b-30a5359eb40e/JNmYjkVr3WOjsrbu.png" alt="" class="imgurl">
+      </select>
+    </form>
+    <button onclick="changeColor()" id="admin">Admin Page</button>
+
+    <script>
+
+      let admin = [];
+const imgurl="https://coding-platform.s3.amazonaws.com/dev/lms/tickets/5e80fcb6-3f8e-480c-945b-30a5359eb40e/JNmYjkVr3WOjsrbu.png"
+      const c = document.getElementById("container");
+      const div = document.getElementById("box");
+      const iput = document.getElementById("input");
+      const Catoery = documnent.getElementById("catoery");
+      const value = (document.getElementById("All").value = "all");
+      const auto = (document.getElementById("Auto").value = "auto");
+      const bus = (document.getElementById("Bus").value = "bus");
+      const car = (document.getElementById("Car").value = "car");
+      const track = (document.getElementById("Track").value = "track");
+
+
+      function Adminpage(title) {
+        documnet.getElementById("admin").title.Adminpage;
+        window.location.href = "admin.html";
+        container
+          .createElement("div")
+          .innerHtml.Adminpage.eventListner("click", () => {
+            document.getElementById("admin");
+          });
+      }
+
+
+      function renderfleet(){
+        addlist.createElement("li").innerHtml.texContent;
+        
+
+      }
+    </script>
+  </body>
+</html>
